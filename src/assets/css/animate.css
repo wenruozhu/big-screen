@@ -1,0 +1,86 @@
+/* 头部淡入动画 */
+.es-screen-header {
+  animation: fade 1s;
+}
+@keyframes fade {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/* 左侧滑入动画 */
+.es-screen-left-item {
+  animation-name: slideLeft;
+  animation-duration: 1.3s;
+}
+.es-screen-left-item:nth-child(1) {
+  /* animation-duration: 0.5s; */
+  animation-delay: 0.1s;
+}
+.es-screen-left-item:nth-child(2) {
+  /* animation-duration: 1s; */
+  animation-delay: 0.2s;
+}
+.es-screen-left-item:nth-child(3) {
+  /* animation-duration: 1.5s; */
+  animation-delay: 0.3s;
+}
+@keyframes slideLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  80% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* 右侧滑入动画 */
+.es-screen-right-item {
+  animation-name: slideRight;
+  animation-duration: 1.3s;
+}
+.es-screen-right-item:nth-child(1) {
+  /* animation-duration: 0.3s; */
+  animation-delay: 0.1s;
+}
+.es-screen-right-item:nth-child(2) {
+  animation-delay: 0.2s;
+  /* animation-duration: 0.6s; */
+}
+.es-screen-right-item:nth-child(3) {
+  animation-delay: 0.3s;
+  /* animation-duration: .9s; */
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(100%);
+  }
+  80% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* 中间入场动画 */
+.es-center {
+  animation: slideAndFade 1.5s;
+}
+
+@keyframes slideAndFade {
+  0% {
+    transform: translateY(218px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

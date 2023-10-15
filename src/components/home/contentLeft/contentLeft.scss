@@ -1,0 +1,11 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  .trafficRoutes,.trafficTools,.trafficVolume{
+    position: relative;;
+    width: 100%;
+    height: 33%;
+  }
+}
